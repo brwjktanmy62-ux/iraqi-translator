@@ -10,7 +10,7 @@ api_key = st.sidebar.text_input("Google API Key:", type="password")
 
 if api_key:
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
     user_input = st.text_input("اكتب بالعراقي:")
 
